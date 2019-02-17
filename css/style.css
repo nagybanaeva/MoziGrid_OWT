@@ -33,8 +33,21 @@ h2 {
     background: #08080b;
 }
 
-#top {
+#top,#top-img {
     position: relative;
+}
+
+#top-img:before {
+    position: absolute;
+    content: "";
+    width: 60%;
+    height: 100%;
+    
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#08080b+0,08080b+100&1+0,0+100 */
+background: -moz-linear-gradient(left, rgba(8,8,11,1) 0%, rgba(8,8,11,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(8,8,11,1) 0%,rgba(8,8,11,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(8,8,11,1) 0%,rgba(8,8,11,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#08080b', endColorstr='#0008080b',GradientType=1 ); /* IE6-9 */
 }
 
 #top-img img{
@@ -50,7 +63,18 @@ h2 {
     align-items: center;
     width: 100%;
     height: 100%;
-    
+}
+
+#top-text p {
+    width: 45%;
+}
+
+#top-text a {
+    display: inline-block;
+    padding: 10px 15px;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    text-decoration: none;
 }
 
 #content {
@@ -71,6 +95,19 @@ h2 {
     width: 100%;
     margin: 0 0 30px 0;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+}
+
+footer {
+    padding: 30px 0;
+}
+
+footer ul {
+    text-align: center;
+}
+
+footer li {
+    display: inline-block;
+    padding: 10px 15px;
 }
 
 @media only screen and (min-width: 1025px) {
@@ -106,5 +143,39 @@ h2 {
 @media only screen and (max-width: 768px){
     .center-box {
     padding: 0 30px;
+}
+    #top-text {
+    position: relative;
+    padding: 30px 0;
+}
+    #top-text p {
+    width: 100%;
+}
+    
+    #top-img:before {
+    height: 30%;
+    bottom: 0;
+    content: "";
+    width: 100%;
+    display: block;
+    position: absolute
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#08080b+0,08080b+100&0+0,1+100 */
+background: -moz-linear-gradient(left, rgba(8,8,11,0) 0%, rgba(8,8,11,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(8,8,11,0) 0%,rgba(8,8,11,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(8,8,11,0) 0%,rgba(8,8,11,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0008080b', endColorstr='#08080b',GradientType=1 ); /* IE6-9 */
+    }
+    
+    h1 {
+    font-size: 34px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 950px){
+    #top-img {
+    overflow: hidden; 
+}
+    #top-img img {
+    width: 130%; 
 }
 }
