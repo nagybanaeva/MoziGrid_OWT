@@ -10,6 +10,7 @@ body {
 p {
     line-height: 1.5;
     margin: 0 0 15px 0;
+    padding: 0 15px;
 }
 
 .center-box {
@@ -22,18 +23,20 @@ p {
 h1 {
     font-size: 54px;
     margin: 0 0 15px 0;
+    padding: 0 15px;
 }
 
 h2 {
     font-size: 30px;
     margin: 15px 0 15px 0;
+    padding: 0 15px;
 }
 
 #top, footer {
     background: #08080b;
 }
 
-#top,#top-img {
+#top, #top-img {
     position: relative;
 }
 
@@ -52,6 +55,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#08080b', end
 
 #top-img img{
     width: 100%;
+    display: block;
 }
 
 #top-text {
@@ -66,7 +70,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#08080b', end
 }
 
 #top-text p {
-    width: 45%;
+    width: 40%;
 }
 
 #top-text a {
@@ -75,6 +79,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#08080b', end
     color: #ffffff;
     border: 2px solid #ffffff;
     text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 15px;
 }
 
 #content {
@@ -99,6 +106,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#08080b', end
 
 footer {
     padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer ul {
@@ -112,31 +122,31 @@ footer li {
 
 @media only screen and (min-width: 1025px) {
     .movie-list li {
-    width: 16.66% /* 6 */
+    width: 16.66%; /* 6 */
 }
 }
 
 @media only screen and (min-width: 825px) and (max-width: 1024px){
     .movie-list li {
-    width: 20% /* 5 */
+    width: 20%; /* 5 */
 }
 }
 
 @media only screen and (min-width: 625px) and (max-width: 824px){
     .movie-list li {
-    width: 25% /* 4 */
+    width: 25%; /* 4 */
 }
 }
 
 @media only screen and (min-width: 425px) and (max-width: 624px){
     .movie-list li {
-    width: 33.33% /* 3 */
+    width: 33.33%; /* 3 */
 }
 }
 
 @media only screen and (max-width: 424px){
     .movie-list li {
-    width: 50% /* 2 */
+    width: 50%; /* 2 */
 }
 }
 
@@ -158,12 +168,13 @@ footer li {
     content: "";
     width: 100%;
     display: block;
-    position: absolute
+    position: absolute;
+        
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#08080b+0,08080b+100&0+0,1+100 */
-background: -moz-linear-gradient(left, rgba(8,8,11,0) 0%, rgba(8,8,11,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left, rgba(8,8,11,0) 0%,rgba(8,8,11,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right, rgba(8,8,11,0) 0%,rgba(8,8,11,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0008080b', endColorstr='#08080b',GradientType=1 ); /* IE6-9 */
+background: -moz-linear-gradient(top, rgba(8,8,11,0) 0%, rgba(8,8,11,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(8,8,11,0) 0%,rgba(8,8,11,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(8,8,11,0) 0%,rgba(8,8,11,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0008080b', endColorstr='#08080b',GradientType=0 ); /* IE6-9 */
     }
     
     h1 {
@@ -171,7 +182,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0008080b', e
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 950px){
+@media only screen and (min-width: 768px) and (max-width: 950px) {
     #top-img {
     overflow: hidden; 
 }
